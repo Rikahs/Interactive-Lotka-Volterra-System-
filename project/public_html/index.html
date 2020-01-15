@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<header>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script type="text/javascript" src="config.js"></script>
+	<link rel="stylesheet" type="text/css" href="config.css">
+	</header>
+	
+	<body>
+	<noscript>
+	       <div class="alert">
+	           You need to enable JavaScript to for the menu to work.
+	       </div>
+	    </noscript>
+		<div class="container">
+			<div class="buttoncontainer">
+			
+			<div id="choice">choose the mode</div>
+			<button id="button0" onClick="showpve()">
+				PvE
+				</button>
+				
+				<button id="button00" onClick="showsim()">
+				Simulation 
+				</button>
+				<button id="button" onClick="showinstructions()">
+				Instructions 
+				</button>
+				</br>
+				<button id="button1" onClick="showPred()">
+				Turn On
+				</button>
+				</br>
+				<button id="button2" onClick="showPrey()">
+				Prey Npc
+				</button>
+				</br>
+				<button id="button3" onClick="showPlayer()">
+				Player
+				</button>
+				<button id="button4" onClick="showother()">
+				Other options
+				</button>
+				</br>
+				<button id="home" onClick="showHome()">
+				Home
+				</button>
+				
+			</div>
+			<form action="config.php" method="post">
+			<div class="othercontainer">
+			
+			<div id="instructions">
+			place instructions here
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</div>
+			
+			<div id="Pred" >
+			Turn On Simulation <br>
+			 <input type="checkbox" value="" name="sim" /> 
+			</div>
+			
+			<div id="Prey">                                                 
+
+
+			Rat Initial population<br>
+			<input type="number" value="" name="ratpopulation"> <br><br> 
+			
+			Bat Initial population <br>
+			<input type="number" value="" name="batpopulation"><br><br>
+			
+			Goblin Initial population<br>
+			<input type="number" value="" name="goblinpopulation"><br><br>
+			
+			Crab Initial population <br>
+			<input type="number" value="" name="crabpopulation"><br><br>
+			
+			Skeleton Initial population<br>
+			<input type="number" value="" name="skeletonpopulation">
+			<br>
+			<br>
+			Prey death age
+
+			<input type="number" value="" name="preydeathage"<br><br>
+			
+			Prey	Death rate(starving)<br>
+			<input type="range"min="1" max="3"  oninput="amount.value=preydeathrate.value"name="preydeathrate">&nbsp&nbsp&nbsp&nbsp
+			<output name="amount" for="preydeathrate"></output><br><br>
+			
+			Prey	Reproduction rate(number of turns and amount of grass needed/ the possibility of reproducing)<br>
+			<input type="range"min="1" max="3" oninput="amount1.value=preyreporate.value" name="preyreporate">&nbsp&nbsp&nbsp&nbsp
+			<output name="amount1" for="preyreporate"></output><br><br>
+			
+			Prey	Max food level<br>
+			<input type="range"min="1" max="3" oninput="amount2.value=preyfoodlv.value" name="preyfoodlv">&nbsp&nbsp&nbsp&nbsp
+			<output name="amount2" for="preyfoodlv"></output><br><br>
+			
+			Prey	Metabolism rate<br>
+			<input type="range"min="1" max="3" oninput="amount3.value=preymetrate.value" name="preymetrate">&nbsp&nbsp&nbsp&nbsp
+			<output name="amount3" for="preymetrate"></output><br><br>
+			
+
+			</div>
+			
+			<div id="Player">
+			Resting Metabolism rate<br>
+			<input type="range"min="1" max="3" oninput="amount4.value=playerdeathrate.value" name="playerdeathrate">&nbsp&nbsp&nbsp&nbsp
+			<output name="amount4" for="playerdeathrate"></output><br><br>
+			
+			Active Metabolism rate<br>
+			<input type="range"min="1" max="3" oninput="amount9.value=playermetrate.value" name="playermetrate">&nbsp&nbsp&nbsp&nbsp
+			<output name="amount9" for="playermetrate"></output><br><br>
+			
+			max food level<br>
+			<input type="number" max="180" min="1" name=" playerfoodlv"><br><br>
+			
+			
+			
+			</div>
+			
+			<div id="otheroptions">
+			
+			<table border="1">
+			  <tr>
+			  <td>  </td>
+				<td>skeleton</td>
+				<td>goblins</td> 
+				<td>crabs</td>
+				<td>bats</td>
+				<td>rats</td>
+			  </tr>
+			  <tr>
+				<td>skeleton</td>                     
+				<td> <input type="checkbox" value="" name="pp[0][0]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[0][1]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[0][2]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[0][3]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[0][4]" /> </td> 
+			  </tr>                                                  
+			    <tr>                                                 
+				<td>goblin</td>                                      
+				<td> <input type="checkbox" value="" name="pp[1][0]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[1][1]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[1][2]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[1][3]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[1][4]" /> </td> 
+			  </tr>                                                  
+			    <tr>                                                 
+				<td>crabs</td>                                       
+				<td> <input type="checkbox" value="" name="pp[2][0]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[2][1]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[2][2]" /></td> 
+				<td> <input type="checkbox" value="" name="pp[2][3]" /></td> 
+				<td> <input type="checkbox" value="" name="pp[2][4]" /></td> 
+			  </tr>                                                  
+			    <tr>                                                 
+				<td>bats</td>                                        
+				<td> <input type="checkbox" value="" name="pp[3][0]" /> </td> 
+				<td> <input type="checkbox" value="" name="pp[3][1]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[3][2]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[3][3]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[3][4]" /> </td>
+			  </tr>                                                  
+			    <tr>                                                 
+				<td>rats</td>                                        
+				<td> <input type="checkbox" value="" name="pp[4][0]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[4][1]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[4][2]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[4][3]" /> </td>
+				<td> <input type="checkbox" value="" name="pp[4][4]" /> </td>
+			  </tr>
+			</table>
+		
+		
+			enable chat <br>
+			<input type="checkbox" value="" name="chat"><br><br>
+
+			</div>
+			
+			<input id="submit" type="submit"  >
+			</form>
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,368 @@
+
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 50px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+   
+}
+
+/* Links */
+a {
+    color: #3bc492;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background-color: #34495e;
+	padding-top: 60px;
+}
+
+#headerwrap h1 {
+	margin-top: 30px;
+	color: white;
+	font-size: 70px;
+	
+}
+
+#headerwrap h3 {
+	color: white;
+	font-size: 30px;
+}
+
+#headerwrap h5 {
+	color: white;
+	font-weight: 700;
+	text-align: left;
+}
+
+#headerwrap p {
+	text-align: left;
+	color: white
+}
+
+/* intro Wrap */
+
+#intro {
+	padding-top: 50px;
+	border-top: #bdc3c7 solid 5px;
+}
+
+#features {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#features .ac a{
+	font-size: 20px;
+}
+
+/* Showcase Wrap */
+
+#showcase {
+	display: block;
+	background-color: #34495e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#showcase h1 {
+	color: white;
+}
+
+#footerwrap {
+	background-color: #2f2f2f;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+#footerwrap h3 {
+	font-size: 28px;
+	color: white;
+}
+
+#footerwrap p {
+	color: white;
+	font-size: 18px;
+}
+
+/* Copyright Wrap */
+
+#c {
+	background: #222222;
+	padding-top: 15px;
+	text-align: right;
+}
+
+#c p {
+	color: white
+}
+
+
+
+
+
+/**/        /* that means i added something here, incase u wanna fiddle with it */
+body /* this whole body style was added */
+{
+	font-family: Segoe UI; /**/
+	font-size: 100%;
+	color: #fff; 
+
+	/* js file wasnt in folder so idk how this affected various text but
+	the idea is to make every text except the text of buttons white it 
+	will look better with solid colour backgrounds that are strong colours like red or blue */
+}
+
+.buttoncontainer
+{
+	height:600px;
+	width:200px;
+	float:left;
+	margin-left:150px;
+	border-bottom-left-radius: 8px;/**/
+	border-top-left-radius: 8px;/**/
+	box-shadow: -1px 2px 3px 1px #bbbbbb/**/
+}
+
+
+#home
+{
+	cursor: pointer; cursor: hand;
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	
+	border:none;
+}
+
+#choice
+{
+	padding-top: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	
+}
+button /* quick way to style all the buttons */
+{
+	font-family: Arial;
+	font-size: 105%;
+	text-shadow: 1px 2px 5px #222;
+	box-shadow: 0 1px 1px 2px #fff;
+}
+button:hover
+{
+	box-shadow: 0 1px 1px 2px #006;
+}
+#button00
+{
+	cursor: pointer; cursor: hand;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	border-radius: 5px; /**/
+}
+#button0
+{
+	cursor: pointer; cursor: hand;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	border-radius: 5px; /**/
+
+}
+#button
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button1
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button2
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button3
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button4
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+#submit
+{
+	display:none;
+	position:fixed;
+	top: 525px;
+	left:700px;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+.othercontainer
+{
+	float:left;
+	height:600px;
+	width:600px;
+
+	border-top-right-radius: 8px;/**/
+	border-bottom-right-radius: 8px;/**/
+	box-shadow: 1px 2px 3px 1px #bbbbbb/**/
+}
+#instructions
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+#Pred
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+
+#Prey
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+
+#Player
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+#otheroptions
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+ .alert 
+ {
+	 height:50px;
+	 background:#d83939;
+	 width:100%;color:#eee;
+	 font-size:20px;font-family:'GraphicPixel', arial, sans-serif;
+	 text-align:center;
+	 line-height:50px;
+	 border-bottom:1px solid #000;
+ }
+

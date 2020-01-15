@@ -1,0 +1,208 @@
+/**/        /* that means i added something here, incase u wanna fiddle with it */
+body /* this whole body style was added */
+{
+	font-family: Segoe UI; /**/
+	font-size: 100%;
+	color: #fff; 
+	background-color: #ffd;
+	/* js file wasnt in folder so idk how this affected various text but
+	the idea is to make every text except the text of buttons white it 
+	will look better with solid colour backgrounds that are strong colours like red or blue */
+}
+.container
+{
+	height:600px;
+	width:800px;
+	margin:auto;
+}
+.buttoncontainer
+{
+	height:600px;
+	width:200px;
+	float:left;
+	background-color:red;
+	border-bottom-left-radius: 8px;/**/
+	border-top-left-radius: 8px;/**/
+	box-shadow: -1px 2px 3px 1px #bbbbbb/**/
+}
+
+
+#home
+{
+	cursor: pointer; cursor: hand;
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color:red;
+	border:none;
+}
+
+#choice
+{
+	padding-top: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+	
+}
+button /* quick way to style all the buttons */
+{
+	font-family: Arial;
+	font-size: 105%;
+	text-shadow: 1px 2px 5px #222;
+	box-shadow: 0 1px 1px 2px #fff;
+}
+button:hover
+{
+	box-shadow: 0 1px 1px 2px #006;
+}
+#button00
+{
+	cursor: pointer; cursor: hand;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	border-radius: 5px; /**/
+}
+#button0
+{
+	cursor: pointer; cursor: hand;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	border-radius: 5px; /**/
+
+}
+#button
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button1
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button2
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button3
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+
+#button4
+{
+	display:none;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+#submit
+{
+	display:none;
+	position:fixed;
+	top: 425px;
+	left:880px;
+	height:50px;
+	width:100px;
+	margin-left:50px;
+	margin-top:20px;
+	background-color: #cff; /**/
+	border:none;
+	cursor: pointer; cursor: hand;
+}
+.othercontainer
+{
+	float:left;
+	height:600px;
+	width:600px;
+	background-color:blue;
+	border-top-right-radius: 8px;/**/
+	border-bottom-right-radius: 8px;/**/
+	box-shadow: 1px 2px 3px 1px #bbbbbb/**/
+}
+#instructions
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+#Pred
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+
+#Prey
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+
+#Player
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+#otheroptions
+{
+	display:none;
+	margin-left:50px;
+	margin-right:50px;	
+}
+ .alert 
+ {
+	 height:50px;
+	 background:#d83939;
+	 width:100%;color:#eee;
+	 font-size:20px;font-family:'GraphicPixel', arial, sans-serif;
+	 text-align:center;
+	 line-height:50px;
+	 border-bottom:1px solid #000;
+ }
